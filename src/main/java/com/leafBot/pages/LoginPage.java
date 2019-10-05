@@ -8,7 +8,7 @@ public class LoginPage extends SeleniumBase {
 	
 	@Given("Enter the username as (.*)")
 	public LoginPage enterUsername(String username) {
-		clearAndType(locateElement("id", "username"), username);
+		clearAndType(locateElement("name", "USERNAME"), username);
 		return this;
 	}
 
