@@ -14,7 +14,8 @@ public class LoginPage extends SeleniumBase {
 
 	@Given("Enter the Password as (.*)")
 	public LoginPage enterPassword(String password) {
-		clearAndType(locateElement("id", "password"), password);
+		//locator is changed
+		clearAndType(locateElement("name", "PASSWORD"), password);
 		return this;
 	}
 
